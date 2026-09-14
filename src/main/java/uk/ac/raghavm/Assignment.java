@@ -56,9 +56,14 @@ public class Assignment {
     } 
 
     //Setter methods
-    public Boolean setIsCompleted(){
+    public void setIsCompleted(){
         isCompleted = true;
-    } 
+    }
+
+    //Misc. methods
+
+    //overdue method needed
+
     
 
 
