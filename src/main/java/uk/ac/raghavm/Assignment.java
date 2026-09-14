@@ -15,23 +15,27 @@ public class Assignment {
         String name, 
         String moduleName, 
         LocalDate dueDate, 
-        Priority priority,
-        boolean isCompleted){
+        Priority priority
+    ){
 
 
-        if(!name.isBlank() || name == null){
+        if(name == null || name.isBlank() ){
             throw new IllegalArgumentException("Error: Please enter Assignment Name before continuing.");
         }
 
-        if(!moduleName.isBlank() || moduleName == null){
+        if( moduleName == null || moduleName.isBlank()){
             throw new IllegalArgumentException("Error: Please enter Module Name before continuing.");
         }
 
+        /*if(dueDate == null){
+            throw new IllegalArgumentException("Error: Please enter Due Date before continuing.");
+        }*/
+
         this.name = name;
         this.moduleName = moduleName;
-        this.dueDate = Objects.requireNonNull(dueDate) ;
+        this.dueDate =  Objects.requireNonNull(dueDate);
         this.priority = Objects.requireNonNull(priority);
-        this.isCompleted = false;
+        isCompleted = false;
     }
 
     //Getter methods
