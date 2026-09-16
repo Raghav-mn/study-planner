@@ -58,16 +58,19 @@ class AssignmentTest {
     );
     }
 
-    @Test 
+    //dont see myself needing to test for a null due date or priority like this
+    //need to test that the user gets the error when inputting
+    /*@Test 
     void throwsForNullDueDate(){
         assertThrows(NullPointerException.class, () -> new Assignment(
             "Test3", 
             "ModuleTest3", 
             null, 
             Priority.LOW
-        ), "Null pointer thrown"
+        )
         );
     }
+        */
 
 
 }
